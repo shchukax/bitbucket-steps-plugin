@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly
+        xmlns:j="jelly:core"
+        xmlns:st="jelly:stapler"
+        xmlns:d="jelly:define"
+        xmlns:l="/lib/layout"
+        xmlns:t="/lib/hudson"
+        xmlns:f="/lib/form"
+        xmlns:i="jelly:fmt">
+
+    <f:section title="Repository">
+        <f:entry title="Bitbucket Project" field="project">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Repo Slug" field="repoSlug">
+            <f:textbox/>
+        </f:entry>
+    </f:section>
+
+    <f:section title="Tag">
+        <f:entry field="name" title="Tag name" message="Tag to create">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry field="message" title="Tag message" message="Commit message to use">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry field="startPoint" title="Start point" message="Branch, tag or commit hash to create tag on">
+            <f:textbox/>
+        </f:entry>
+    </f:section>
+</j:jelly>

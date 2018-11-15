@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly
+        xmlns:j="jelly:core"
+        xmlns:st="jelly:stapler"
+        xmlns:d="jelly:define"
+        xmlns:l="/lib/layout"
+        xmlns:t="/lib/hudson"
+        xmlns:f="/lib/form"
+        xmlns:i="jelly:fmt">
+
+    <f:section title="Bitbucket Steps">
+
+        <f:entry title="Server URL" field="url">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Username" field="username">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Password" field="password">
+            <f:password/>
+        </f:entry>
+
+        <f:entry title="Timeout in seconds" field="timeout">
+            <f:textbox default="10"/>
+        </f:entry>
+
+        <f:entry title="Connection pool size" field="poolSize">
+            <f:textbox default="10"/>
+        </f:entry>
+
+    </f:section>
+</j:jelly>

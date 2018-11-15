@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly
+        xmlns:j="jelly:core"
+        xmlns:st="jelly:stapler"
+        xmlns:d="jelly:define"
+        xmlns:l="/lib/layout"
+        xmlns:t="/lib/hudson"
+        xmlns:f="/lib/form"
+        xmlns:i="jelly:fmt">
+
+    <f:section title="Repository">
+        <f:entry title="Bitbucket Project" field="project">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Repo Slug" field="repoSlug">
+            <f:textbox/>
+        </f:entry>
+    </f:section>
+
+    <f:section title="Pull request">
+        <f:entry field="title" title="Title" message="Title of pull request">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry field="description" title="Description" message="Description of pull request">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry field="fromRef" title="From ref" message="Source branch, tag or commit hash">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry field="toRef" title="To ref" message="Destination branch, tag or commit hash">
+            <f:textbox/>
+        </f:entry>
+    </f:section>
+</j:jelly>

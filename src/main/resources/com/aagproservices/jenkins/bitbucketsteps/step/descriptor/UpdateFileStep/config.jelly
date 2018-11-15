@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly
+        xmlns:j="jelly:core"
+        xmlns:st="jelly:stapler"
+        xmlns:d="jelly:define"
+        xmlns:l="/lib/layout"
+        xmlns:t="/lib/hudson"
+        xmlns:f="/lib/form"
+        xmlns:i="jelly:fmt">
+
+    <f:section title="Repository">
+        <f:entry title="Bitbucket Project" field="project">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Repo Slug" field="repoSlug">
+            <f:textbox/>
+        </f:entry>
+    </f:section>
+
+    <f:section title="File">
+        <f:entry field="file" title="File path" message="File path to update, relative to repo root">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry field="message" title="Commit message" message="Commit message to use">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry field="branch" title="Branch" message="Branch to commit to">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry field="sourceCommitId" title="Source commit" message="Commit hash of revision to start from (optional)">
+            <f:textbox/>
+        </f:entry>
+    </f:section>
+</j:jelly>
