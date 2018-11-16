@@ -65,7 +65,7 @@
         <maven.projectinfo.version>3.0.0</maven.projectinfo.version>
         <maven.checkstyle.version>2.17</maven.checkstyle.version>
         <maven.javadoc.version>2.10.4</maven.javadoc.version>
-        <maven.versions.version>2.3</maven.versions.version>
+        <maven.versions.version>2.7</maven.versions.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
 
@@ -210,7 +210,7 @@
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-infoo-reports-plugin</artifactId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
                 <version>${maven.projectinfo.version}</version>
                 <configuration>
                     <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
