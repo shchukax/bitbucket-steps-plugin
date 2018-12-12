@@ -11,7 +11,7 @@
 
     <groupId>com.aagproservices.jenkins.plugins</groupId>
     <artifactId>bitbucket-steps</artifactId>
-    <version>0.1.0</version>
+    <version>0.2.0</version>
     <packaging>hpi</packaging>
     <name>Bitbucket Steps Plugin</name>
     <inceptionYear>2018</inceptionYear>

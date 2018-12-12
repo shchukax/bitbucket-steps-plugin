@@ -40,6 +40,15 @@ public final class ContentService extends BaseService {
         }
     }
 
+    public JSONObject getTags(final String project, final String repoSlug) throws BadRequestException {
+        try {
+            Request request = buildRequest (project, repoSlug,"tags", HttpMethod.GET, null, null);
+            return executeRequest(request);
+        } catch (JSONException ex) {
+            throw new RuntimeException("Error creating tag", ex);
+        }
+    }
+
     public JSONObject createBranch(final String project, final String repoSlug, final Branch branch) throws BadRequestException {
         try {
             JSONObject json = new JSONObject()

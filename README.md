@@ -3,6 +3,7 @@ Jenkins (workflow) plugin that exposes limited Bitbucket API via Jenkins workflo
 
 Currently supported methods:
 * Create branch
+* Get tags
 * Create tag
 * Create pull request
 * Merge pull request
