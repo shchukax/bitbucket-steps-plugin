@@ -14,7 +14,7 @@ import javax.annotation.Nonnull;
 /**
  * @author Aleks Gekht
  * @version 0.1.0
- *          Descriptor and definition of the step "createTag" which allows the user tpo create a page.
+ *          Descriptor and definition of the step "createTag" which allows the user to create a tag.
  */
 public class CreateTagStep extends AbstractStep {
 
